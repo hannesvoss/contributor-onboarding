@@ -1,11 +1,11 @@
-from typing import Optional
 import numpy as np
+
 
 # TODO: make all functions work with strings as well
 # TODO: add a new cool calculator function
 
 def sum(a: int, b: int) -> int:
-    '''
+    """
     This function returns the sum of two numbers
 
     Args:
@@ -14,11 +14,12 @@ def sum(a: int, b: int) -> int:
 
     Returns:
     float the sum of a and b
-    '''
+    """
     return a + b
 
+
 def multiply(a, b) -> float:
-    '''
+    """
     This function returns the product of two numbers
 
     Args:
@@ -27,11 +28,12 @@ def multiply(a, b) -> float:
 
     Returns:
     float
-    '''
+    """
     return a * b
 
+
 def divide(a: float, b: float) -> float:
-    '''
+    """
     ...
 
     Args:
@@ -40,11 +42,12 @@ def divide(a: float, b: float) -> float:
 
     Returns:
     float
-    '''
+    """
     return a / b
 
+
 def modulo(a: int, b: int):
-    '''
+    """
     ...
 
     Args:
@@ -53,15 +56,16 @@ def modulo(a: int, b: int):
 
     Returns:
     float
-    '''
+    """
 
     # I think this could be made more efficient?
     result = a - (np.floor(a / b) * b)
 
     return result
 
+
 def element_wise_multiply(a: np.array, b: np.array) -> np.array:
-    '''
+    """
     ...
 
     Args:
@@ -70,14 +74,15 @@ def element_wise_multiply(a: np.array, b: np.array) -> np.array:
 
     Returns:
     np.array
-    '''
+    """
 
     # let's hope that both vectors have the same shape
 
     return np.multiply(a, b)
 
+
 def return_hexadecimal(a: int) -> float:
-    '''
+    """
     ...
 
     Args:
@@ -86,21 +91,17 @@ def return_hexadecimal(a: int) -> float:
 
     Returns:
     float
-    '''
+    """
 
     return hex(a)
 
 
 def return_random_number() -> int:
-    '''
-    ...
-
-    Args:
-    a: float
-    b: float
+    """
+    This function returns a random number between 0 and 100
 
     Returns:
-    float
-    '''
+    int
+    """
 
     return np.random.randint(0, 100)
